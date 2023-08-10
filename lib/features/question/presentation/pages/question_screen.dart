@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:loshical/answer_image.dart';
-import 'package:loshical/assets.dart';
-import 'package:loshical/how_to_play_screen.dart';
-import 'package:loshical/question_image.dart';
+
+import '../../../../assets.dart';
+import '../../../how/presentation/pages/how_to_play_screen.dart';
+import '../../widgets/answer_image.dart';
+import '../../widgets/question_image.dart';
 
 class QuestionScreen extends StatelessWidget {
+  static const routeName = '/';
+
+  //
   const QuestionScreen({super.key});
 
   @override
@@ -33,10 +37,10 @@ class QuestionScreen extends StatelessWidget {
                 height: 16,
               ),
               Wrap(
-                children: AssetManager.questionPaths
+                children: AssetManager.questions
                     .map(
                       (e) => QuestionImage(
-                        assetPath: e,
+                        entity: e,
                       ),
                     )
                     .toList(),
@@ -47,10 +51,10 @@ class QuestionScreen extends StatelessWidget {
                 height: 16,
               ),
               Wrap(
-                children: AssetManager.answerPaths
+                children: AssetManager.answers
                     .map(
                       (e) => AnswerImage(
-                        assetPath: e,
+                        entity: e,
                       ),
                     )
                     .toList(),

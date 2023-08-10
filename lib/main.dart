@@ -1,17 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:loshical/question_screen.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:loshical/core/navigations/router_provider.dart';
 
 void main() {
-  runApp(const Loshical());
+  runApp(
+    const ProviderScope(
+      child: Loshical(),
+    ),
+  );
 }
 
-class Loshical extends StatelessWidget {
+class Loshical extends ConsumerWidget {
   const Loshical({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: QuestionScreen(),
+  Widget build(BuildContext context, WidgetRef ref) {
+    final goRouter = ref.read(routerProvider);
+
+    return MaterialApp.router(
+      routeInformationProvider: goRouter.routeInformationProvider,
+      routeInformationParser: goRouter.routeInformationParser,
+      routerDelegate: goRouter.routerDelegate,
     );
   }
 }
