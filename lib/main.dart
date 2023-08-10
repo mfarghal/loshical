@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:loshical/core/navigations/router_provider.dart';
+
+import 'core/navigations/router_provider.dart';
 
 void main() {
   runApp(

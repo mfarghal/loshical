@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:loshical/core/widgets/hugged_child.dart';
-import 'package:loshical/features/question/domain/entities/answer_asset_entity.dart';
+
+import '../../../core/widgets/hugged_child.dart';
+import '../domain/entities/answer_asset_entity.dart';
 
 class AnswerImage extends StatelessWidget {
   const AnswerImage({super.key, required this.entity});

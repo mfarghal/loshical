@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:loshical/assets.dart';
 import 'package:photo_view/photo_view.dart';
+
+import '../../../../assets.dart';
 
 class HowToPlayScreen extends StatelessWidget {
   const HowToPlayScreen({super.key});

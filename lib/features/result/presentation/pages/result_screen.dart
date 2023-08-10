@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:loshical/assets.dart';
 
 import '../../../../core/provider/result_provider.dart';
 

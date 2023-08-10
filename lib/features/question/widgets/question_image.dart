@@ -1,15 +1,14 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:loshical/core/models/result.dart';
-import 'package:loshical/core/provider/result_provider.dart';
+
 import '../../../assets.dart';
+import '../../../core/models/asset_entity.dart';
+//
+import '../../../core/models/result.dart';
+import '../../../core/provider/result_provider.dart';
 import '../../../core/widgets/hugged_child.dart';
 import '../domain/entities/question_asset_entity.dart';
-
-import '../../../core/models/asset_entity.dart';
 
 class QuestionImage extends HookConsumerWidget {
   const QuestionImage({super.key, required this.entity});

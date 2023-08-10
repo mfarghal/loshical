@@ -1,5 +1,5 @@
-import 'package:loshical/features/question/domain/entities/answer_asset_entity.dart';
-import 'package:loshical/features/question/domain/entities/question_asset_entity.dart';
+import 'features/question/domain/entities/answer_asset_entity.dart';
+import 'features/question/domain/entities/question_asset_entity.dart';
 
 enum AssetType {
   question('q'),
